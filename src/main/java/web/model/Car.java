@@ -11,8 +11,6 @@ public class Car {
         this.speedCar = speedCar;
     }
 
-    //public Car(){}
-
     public String getBrandCar() {
         return brandCar;
     }
