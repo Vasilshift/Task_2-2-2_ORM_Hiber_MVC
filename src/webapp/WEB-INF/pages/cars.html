@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+<div>
+    <h1>Show cars</h1>
+
+    <table border="1">
+        <tr>
+            <th>No</th>
+            <th>brandCar</th>
+            <th>modelCar</th>
+            <th>speedCar</th>
+        </tr>
+
+        <tr th:each = "listcar, state : ${listCar}"
+            class="row" th:classappend="${state.odd} ? 'odd-row' : 'even-row'">
+            <td th:utext="${state.count}">No</td>
+            <td th:utext="${brandCar}">brandCar</td>
+            <td th:utext="${modelCar}">modelCar</td>
+            <td th:utext="${speedCar}">speedCar</td>
+
+        </tr>
+
+    </table>
+</div>
+</body>
+</html>
