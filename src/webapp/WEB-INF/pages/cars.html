@@ -7,46 +7,21 @@
 <body>
 <div>
     <h1>Show cars</h1>
-    <div>
+    <table border="1">
+    <tr>
         <th:block th:each="msg : ${listCars}">
-            <h1 th:text="${msg}"></h1>
+
+            <td th:text="${msg}"></td>
+
         </th:block>
-    </div>
-<!--    <table border="1">-->
-<!--        <tr>-->
-<!--            <th>No</th>-->
-<!--            <th>brandCar</th>-->
-<!--            <th>modelCar</th>-->
-<!--            <th>speedCar</th>-->
-<!--        </tr>-->
+    </tr>
+    </table>
 
-<!--        <tr th:each= "listcars, state : ${listCars}"-->
-<!--            class="row" th:classappend="${state.odd} ? 'odd-row' : 'even-row'">-->
-<!--            <td th:text="${state.count}">No</td>-->
-<!--            <td th:text="${listCar.brandCar}">brandCar</td>-->
-<!--            <td th:text="${listCar.modelCar}">modelCar</td>-->
-<!--            <td th:text="${listCar.speedCar}">speedCar</td>-->
-<!--        </tr>-->
-<!--    </table>-->
+    <th:block th:each="msg1 : ${listCarsNumbers}">
 
-<!--    <p th:text="${cars[count]}"/>-->
+        <td th:text="${msg1}"></td>
 
-<!--    <table border="1">-->
-<!--        <tr>-->
-<!--            <td>brandCar</td>-->
-<!--            <td>modelCar</td>-->
-<!--            <td>speedCar</td>-->
-<!--        </tr>-->
-<!--        <th:forEach var="cars" items="${cars}">-->
-<!--            <tr>-->
-<!--                <td>${cars.brandCar}</td>-->
-<!--                <td>${cars.modelCar}</td>-->
-<!--                <td>${cars.speedCar}</td>-->
-<!--            </tr>-->
-<!--        </th:forEach>-->
-<!--    </table><br>-->
-
-
+    </th:block>
 
 </div>
 </body>
