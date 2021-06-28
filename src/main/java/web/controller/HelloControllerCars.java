@@ -21,12 +21,12 @@ public class HelloControllerCars {
     @GetMapping("/cars")
     public String viewCars(Model model, @RequestParam(value = "count", required = false, defaultValue = "4") int count) {
         List<Car> listCars = new CarService().getlistCars();
+        //listCars.add(new Car("hjvj", "hvgj", "gchfgt"));
         model.addAttribute("listCars", listCars);
         System.out.println(listCars);
-        //int count = Integer.parseInt(request.getParameter("count"));
-        String[] cars = new String[] {"car1", "car2", "car3", "car4", "car5"};
-        model.addAttribute("cars", cars[count]);
-        System.out.println(cars[count]);
+        //String[] cars = new String[] {"car1", "car2", "car3", "car4", "car5"};
+        //model.addAttribute("cars", cars[count]);
+        //System.out.println(cars[count]);
 
 
         return "cars";
