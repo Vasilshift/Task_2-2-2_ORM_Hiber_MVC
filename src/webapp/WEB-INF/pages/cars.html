@@ -6,16 +6,19 @@
 </head>
 <body>
 <div>
-    <h1>Show cars</h1>
+    <h1>Show all cars</h1>
+
     <table border="1">
-    <tr>
-        <th:block th:each="msg : ${listCars}">
+        <tr>
+            <th:block th:each="msg : ${listCars}">
 
             <td th:text="${msg}"></td>
 
-        </th:block>
-    </tr>
+            </th:block>
+        </tr>
     </table>
+
+    <h1>Show cars with parameter count</h1>
 
     <th:block th:each="msg1 : ${listCarsNumbers}">
 

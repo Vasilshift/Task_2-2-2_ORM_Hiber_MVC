@@ -1,9 +1,9 @@
 package web.model;
 
 public class Car {
-    private String brandCar;
-    private String modelCar;
-    private String speedCar;
+    String brandCar;
+    String modelCar;
+    String speedCar;
 
     public Car(String brandCar, String modelCar, String speedCar) {
         this.brandCar = brandCar;
@@ -33,5 +33,10 @@ public class Car {
 
     public void setSpeedCar(String speedCar) {
         this.speedCar = speedCar;
+    }
+
+    @Override
+    public String toString() {
+        return brandCar + " " + modelCar + " " + speedCar;
     }
 }

@@ -19,7 +19,7 @@ public class HelloControllerCars {
         model.addAttribute("listCars", listCars);
         System.out.println(listCars);
 
-        model.addAttribute("listCarsNumbers", listCarsNumbers);
+        model.addAttribute("listCarsNumbers", listCarsNumbers.toString());
 
         return "cars";
     }
