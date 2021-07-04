@@ -10,7 +10,7 @@ import java.util.List;
 import java.util.stream.Collectors;
 
 @Controller
-public class HelloControllerCars {
+public class ControllerCars {
 
     @GetMapping("/cars")
     public String viewCars(Model model, @RequestParam(value = "count", required = false, defaultValue = "4") int count) {
