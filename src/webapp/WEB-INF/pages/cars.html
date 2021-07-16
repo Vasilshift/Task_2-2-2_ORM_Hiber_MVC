@@ -9,22 +9,14 @@
     <h1>Show cars</h1>
 
     <table border="1">
-        <tr>
-            <th:block th:each="msg : ${listCarsNumbers}">
 
-            <td th:text="${msg}"></td>
+            <tbody>
+            <tr th:each="car : ${listCarsNumbers}">
+                <td><span th:text="${car}"> Brand </span></td>
+            </tr>
+            </tbody>
 
-            </th:block>
-        </tr>
     </table>
-
-<!--    <h1>Show cars with parameter count</h1>-->
-
-<!--    <th:block th:each="msg1 : ${listCarsNumbers}">-->
-
-<!--        <td th:text="${msg1}"></td>-->
-
-<!--    </th:block>-->
 
 </div>
 </body>
