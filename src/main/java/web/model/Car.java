@@ -35,8 +35,8 @@ public class Car {
         this.speedCar = speedCar;
     }
 
-    @Override
-    public String toString() {
-        return brandCar + " " + modelCar + " " + speedCar;
-    }
+//    @Override
+//    public String toString() {
+//        return brandCar + " " + modelCar + " " + speedCar;
+//    }
 }

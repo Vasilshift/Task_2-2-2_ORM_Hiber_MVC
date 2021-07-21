@@ -9,15 +9,18 @@
     <h1>Show cars</h1>
 
     <table border="1">
-
-            <tbody>
-            <tr th:each="car : ${listCarsNumbers}">
-                <td><span th:text="${car}"> Brand </span></td>
-            </tr>
-            </tbody>
+        <tr>
+        <th>brandCar</th>
+        <th>modelCar</th>
+        <th>speedCar</th>
+        </tr>
+        <tr th:each="car : ${listCars}">
+            <td th:text="${car.brandCar}"> Brand</td>
+            <td th:text="${car.modelCar}"> model</td>
+            <td th:text="${car.speedCar}"> model</td>
+        </tr>
 
     </table>
-
 </div>
 </body>
 </html>
