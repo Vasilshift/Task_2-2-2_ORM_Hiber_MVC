@@ -14,12 +14,10 @@ public class ControllerCars {
 
     @GetMapping("/cars")
     public String viewCars(Model model, @RequestParam(value = "count", required = false, defaultValue = "5") int count) {
-        List<Car> listCars = new CarService().getlistCars();
-        List<Car> listCarsNumbers = (List<Car>) new CarService().getlistCars().stream().limit(count).collect(Collectors.toList());
+
+        List<Car> listCars = new CarService().getlistCars().stream().limit(count).collect(Collectors.toList());;
         model.addAttribute("listCars", listCars);
         System.out.println(listCars);
-
-        model.addAttribute("listCarsNumbers", listCarsNumbers.toString());
 
         return "cars";
     }
